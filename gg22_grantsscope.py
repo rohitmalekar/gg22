@@ -75,8 +75,8 @@ if selected_metrics:
         if scol2.button("Apply"):
             
             # Read the CSV files from the data folder
-            oso_df = pd.read_csv('./gg22/data/GG22 GrantsScope OSO - oso.csv')
-            regendata_df = pd.read_csv('./gg22/data/GG22 GrantsScope OSO - regendata.csv')
+            oso_df = pd.read_csv('./data/GG22 GrantsScope OSO - oso.csv')
+            regendata_df = pd.read_csv('./data/GG22 GrantsScope OSO - regendata.csv')
 
             # Remove the prefix "https://github.com/" from the project_github column
             regendata_df['oso_project_name'] = regendata_df['project_github'].str.replace("https://github.com/", "", regex=False)
