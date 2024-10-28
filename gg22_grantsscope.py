@@ -30,7 +30,7 @@ col2.caption("Created by Rohit Malekar | [grantsscope.xyz](grantsscope.xyz)")
 
 col2.markdown(""" Since June 2023, GrantsScope has been pioneering data-driven innovations to enhance Gitcoin Grants. We've launched personalized, AI-powered tools like RAG (Retrieval Augmented Generation) experiences and one-click grantee recommendations, making it easier for donors to explore impactful projects based on donation history and advanced clustering algorithms. """)
 
-col2.markdown(""" In GG22, we're taking it a step further. Donors can now create their own composite impact metrics, powered by Open Source Observer, and discover how grantees align with their values and goals. If you find value in these insights, support GrantsScope and contribute to more innovations for the community. """)
+col2.markdown(""" In GG22, we're taking it a step further. Donors can now create their own composite impact metrics, powered by Open Source Observer, and discover how grantees align with their goals. If you find value in these insights, support GrantsScope and contribute to more innovations for the community. """)
 
 col2.link_button("Support GrantsScope in GG22", "https://explorer.gitcoin.co/#/round/42161/608/77", type="primary")
 scol1, scol2, scol3 = st.columns([1, 1.5, 1])  # Adjust the width ratios as needed
@@ -77,8 +77,8 @@ if selected_metrics:
         if scol2.button("Apply"):
             
             # Read the CSV files from the data folder
-            oso_df = pd.read_csv('./gg22/data/GG22 GrantsScope OSO - oso.csv')
-            regendata_df = pd.read_csv('./gg22/data/GG22 GrantsScope OSO - regendata.csv')
+            oso_df = pd.read_csv('./data/GG22 GrantsScope OSO - oso.csv')
+            regendata_df = pd.read_csv('./data/GG22 GrantsScope OSO - regendata.csv')
 
             # Remove the prefix "https://github.com/" from the project_github column
             regendata_df['oso_project_name'] = regendata_df['project_github'].str.replace("https://github.com/", "", regex=False)
