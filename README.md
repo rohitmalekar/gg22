@@ -1,8 +1,9 @@
 # GrantsScope for Gitcoin Grants 22
 Built on top of Open Source Observer and RegenData, the app allows users to select and prioritize key project metrics—such as star count, contributor activity, and more—to create personalized composite scores for each project.
 
-Link to the app: https://gg22-grantsscope.streamlit.app
-Read article: https://gov.gitcoin.co/t/data-driven-decision-making-in-quadratic-funding/19752
+**Link to the app:** https://gg22-grantsscope.streamlit.app
+
+**Read article:** https://gov.gitcoin.co/t/data-driven-decision-making-in-quadratic-funding/19752
 
 ## Step 1: Pick Metrics
 GrantsScope lets donors create custom composite impact metrics using GitHub data captured in OSO. To get started, select up to 3 metrics you care about.
